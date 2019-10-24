@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+   <link href="https://fonts.googleapis.com/css?family=Pangolin&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="header">
+<div class="menu">
+    <a href="" class="logo">Практические работы по PHP</a>
+    <a href="index.html">Главная</a>
+    <a href="">Учебники</a>
+    <a href="">Помощь</a>
+    <a href="practices.html">Практики</a>
+</div>
+</div>
+
+<div class="pr-menu">
+    <h1>Оглавление:</h1>
+    <a href="#one">Практическое занятие 1-2</a> <br>
+    <a href="#two">Практическое занятие 3</a>
+    <br>
+    <a href="#four">Практическое занятие 4</a>
+    <br>
+    <a href="#top">Практическое занятие 5</a>
+    <br>
+    <a href="#top">Практическое занятие 6-7</a>
+    <br>
+    <a href="#top">Практическое занятие 8</a>
+    <br>
+    <a href="#top">Практическое занятие 9</a>
+    <br>
+    <a href="#top">Практическое занятие 10-11</a>
+    <br>
+    <a href="#top">Практическое занятие 12-13</a>
+    <br>
+    <a href="#top">Практическое занятие 14-15</a>
+    <br>
+    <a href="#top">Практическое занятие 16</a>
+</div>
+
+<div class="work">
+  
+<!-- Практическая 1 --> 
+    <div class="group" >
+    <div class="brush">
+    
+    <h1 id="one">Практическая работа 1</h1>
+    <h2>Основы синтаксиса PHP. Типы данных. Переменные.</h2>
+    </div>
+ <!--  задание 1 -->
+    <div class="content">
+    <h2>Задание 1</h2>
+    <div class="task">
+     <span>Создайте PHP переменную $htmllab и поместите в нее значение «ru». Распечатайте результат.</span>
+    </div>
+        <h3>Код</h3>
+            <div class="result">
+            <code>
+                <pre>
+&lt;?php
+    $htmllab = "ru";
+    echo $htmllab;
+?>
+                </pre>
+            </code>
+</div>            
+          <h3>Результат</h3>
+       <?php include ('scripts/1-task1.php');?>
+ </div>  
+  
+  <!--  задание 2 -->
+    <div class="content">
+    <h2>Задание 2</h2>
+    <div class="task">
+     <span>Создайте константу NPP (news per page — количество новостей на страницу) и задайте ей значение 10.</span>
+    </div>
+        <h3>Код</h3>
+            <div class="result">
+            <code>
+                <pre>
+&lt;?php
+	const NPP = 10;
+	echo NPP;
+?>
+                </pre>
+            </code>
+</div>            
+          <h3>Результат</h3>
+       <?php include ('scripts/1-task2.php');?>
+ </div>
+  
+      <!--  задание 3 -->
+    <div class="content">
+    <h2>Задание 3</h2>
+    <div class="task">
+     <span>Создайте две целочисленных переменных и распечатайте результат выполнения над ними математических операторов. Примечание: например, $num1=23 и $num2=67; результат оператора сложения echo $num1+$num2</span>
+    </div>
+        <h3>Код</h3>
+            <div class="result">
+            <code>
+                <pre>
+&lt;?php
+	$one = 20;
+	$two = 30;
+	echo $one+$two;  echo '&lt;br>';
+	echo $one*$two;
+?>
+                </pre>
+            </code>
+</div>            
+          <h3>Результат</h3>
+       <?php include ('scripts/1-task3.php');?>
+ </div> 
+        <!--  задание 4 -->
+    <div class="content">
+    <h2>Задание 4</h2>
+    <div class="task">
+     <span>Создайте переменную $test= "345" и узнайте ее тип, при помощи функции gettype(); посмотрите в документации, какая функция устанавливает тип переменной.</span>
+    </div>
+        <h3>Код</h3>
+            <div class="result">
+            <code>
+                <pre>
+&lt;?php
+	$test= "345";
+	echo gettype($test); 
+?>
+                </pre>
+            </code>
+</div>            
+          <h3>Результат</h3>
+       <?php include ('scripts/1-task4.php');?>
+ </div>  
+                <!--  задание 5 -->
+    <div class="content">
+    <h2>Задание 5</h2>
+    <div class="task">
+     <span>При помощи разных способов приведения типов данных, приведите переменную $test из предыдущего задания в числовой тип.</span>
+    </div>
+        <h3>Код</h3>
+            <div class="result">
+            <code>
+                <pre>
+&lt;?php
+	$test= "345";
+	settype($test,"integer");
+	echo gettype($test); echo '&lt;br>';
+	$test = (integer)  $test;
+	echo gettype($test);
+?>
+                </pre>
+            </code>
+</div>            
+          <h3>Результат</h3>
+       <?php include ('scripts/1-task5.php');?>
+ </div>    
+        
+                        <!--  задание 6 -->
+    <div class="content">
+    <h2>Задание 6</h2>
+    <div class="task">
+     <span>Проверьте, что выведет выражение echo «103»+2</span>
+    </div>
+        <h3>Код</h3>
+            <div class="result">
+            <code>
+                <pre>
+&lt;?php
+	echo "103"+2;
+?>
+                </pre>
+            </code>
+</div>            
+          <h3>Результат</h3>
+       <?php include ('scripts/1-task6.php');?>
+ </div>   
+        
+                                 <!--  задание 7 -->
+    <div class="content">
+    <h2>Задание 7</h2>
+    <div class="task">
+     <span>Проверьте, что выведет выражение echo «103»+2</span>
+    </div>
+        <h3>Код</h3>
+            <div class="result">
+            <code>
+                <pre>
+&lt;?php
+	$x = $_POST['x'];
+	$y = $_POST['y'];
+	echo hypot ($x,$y);
+?>
+                </pre>
+            </code>
+</div>            
+          <h3>Результат</h3>
+          
+<form action="#" method="post">
+
+    <p>Первый катет: <input type="text" id="text" name="x" value="" /></p>
+    <p>Второй катет: <input type="text" id="text" name="y" value="" /></p>
+    <?php include ('scripts/1-task7.php');?>
+    <button class="con">Вычислить</button>
+
+</form>
+    
+
+    
+ </div>   
+        
+                                           <!--  задание 8 -->
+    <div class="content">
+    <h2>Задание 8</h2>
+    <div class="task">
+     <span>Используя функцию генерации случайного числа, сгенерируйте целое число в диапазоне от 45 до 234</span>
+    </div>
+        <h3>Код</h3>
+            <div class="result">
+            <code>
+                <pre>
+&lt;?php
+	echo rand(45, 234);
+?>
+                </pre>
+            </code>
+</div>            
+          <h3>Результат</h3>
+<?php
+	echo rand(45, 234);
+?>
+
+ </div>  
+                                                   <!--  задание 9 -->
+    <div class="content">
+    <h2>Задание 9</h2>
+    <div class="task">
+     <span>Используя функцию генерации случайного числа, сгенерируйте дробное число в диапазоне от 45 до 234.</span>
+    </div>
+        <h3>Код</h3>
+            <div class="result">
+            <code>
+                <pre>
+&lt;?php
+    $int = mt_rand(45, 234);
+    $hvost = mt_rand(1,99) / 100;
+    echo $your_number = $int + $hvost;
+?>
+                </pre>
+            </code>
+</div>            
+          <h3>Результат</h3>
+<?php
+    $int = mt_rand(45, 234);
+    $hvost = mt_rand(1,99) / 100;
+    echo $your_number = $int + $hvost;
+?>
+
+ </div>        
+         
+   
+    </div>   
+</div>
+
+<div class="work">
+     <p><a name="two"></a></p>
+<!-- Практическая 2 --> 
+    <div class="group">
+      <div class="brush">
+    <h1>Практическая работа 3</h1>
+      <h2>Константы, операторы</h2>
+ <!--  задание 1 -->
+     </div>
+    <div class="content">
+    <h2>Задание 1</h2>
+    
+    <div class="task">
+    
+     <span>Определение констант</span>
+    </div>
+        <h3>Код</h3>
+            <div class="result">
+            <code>
+                <pre>
+&lt;?php
+    define("CONSTANT", "Здравствуй, мир.");
+    echo CONSTANT; // выводит "Здравствуй, мир."
+    echo Constant; // выводит "Constant" и предупреждение.
+?>
+                </pre>
+            </code>
+</div>            
+          <h3>Результат</h3>
+       <?php include ('scripts/2-task1.php');?>
+ </div>  
+  
+  <!--  задание 2 -->
+    <div class="content">
+    <h2>Задание 2</h2>
+    <div class="task">
+     <span>Определение констант с помощью ключевого слова <var>const</var></span>
+    </div>
+        <h3>Код</h3>
+            <div class="result">
+            <code>
+                <pre>
+&lt;?php
+    // Работает, начиная с версии PHP 5.3.0
+    const CONSTANT = 'Здравствуй, мир.';
+    echo CONSTANT;
+
+    // Работает, начиная с версии PHP 5.6.0
+    const ANOTHER_CONST = CONSTANT.'; Прощай, мир.';
+    echo ANOTHER_CONST;
+?>
+
+</pre>
+            </code>
+</div>            
+          <h3>Результат</h3>
+       <?php include ('scripts/2-task2.php');?>
+ </div>  
+  
+    <!--  задание 3 -->
+    <div class="content">
+    <h2>Задание 3</h2>
+    <div class="task">
+     <span>Правильные и неправильные имена констант</span>
+    </div>
+        <h3>Код</h3>
+            <div class="result">
+            <code>
+                <pre>
+&lt;?php
+    // Правильные имена констант
+    define("FOO",     "something");
+    define("FOO2",    "something else");
+    define("FOO_BAR", "something more");
+    // Неправильные имена констант
+    define("2FOO",    "something");
+    // Это корректное объявление, но лучше его не использовать:
+    // PHP однажды может зарегистрировать "волшебную" константу,
+    // которая сломает ваш скрипт
+    define("__FOO__", "something");
+    echo __FOO__;
+?>
+
+</pre>
+            </code>
+</div>            
+          <h3>Результат</h3>
+       <?php include ('scripts/2-task3.php');?>
+ </div>  
+     
+     <!--  задание 4 -->
+    <div class="content">
+    <h2>Задание 4</h2>
+    <div class="task">
+     <span>Арефметические операции</span>
+    </div>
+        <h3>Код</h3>
+            <div class="result">
+            <code>
+                <pre>
+&lt;?php
+    echo (5 % 3)."\n";           // выводит 2
+    echo (5 % -3)."\n";          // выводит 2
+    echo (-5 % 3)."\n";          // выводит -2
+    echo (-5 % -3)."\n";         // выводит -2
+?>
+
+
+</pre>
+            </code>
+</div>            
+          <h3>Результат</h3>
+       <?php include ('scripts/2-task4.php');?>
+ </div>  
+ 
+      <!--  задание 5 -->
+    <div class="content">
+    <h2>Задание 5</h2>
+    <div class="task">
+     <span>Объяснение логических операторов</span>
+    </div>
+        <h3>Код</h3>
+            <div class="result">
+            <code>
+                <pre>
+&lt;?php
+  // Оператор "||" имеет больший приоритет, чем "or"
+ 
+  // Результат выражения (false || true) будет присвоен переменной $var1
+  // Действие приоритета: $var1 = (false || true)
+  $var1 = false || true;
+  echo $var1; // => 1
+ 
+  // Сначала переменной присваивается значение false, а затем вычисляется второй операнд
+  // Действие приоритета: ($var2 = false) or true
+  $var2 = false or true;  
+  echo $var2;  // false не выводится
+ 
+  // ($var3 = 0) or 3
+  $var3 = 0 or 3; 
+  echo "<br>$var3";   // => 0
+ 
+?>
+
+
+
+</pre>
+            </code>
+</div>            
+          <h3>Результат</h3>
+       <?php include ('scripts/2-task5.php');?>
+ </div>  
+ 
+       <!--  задание 6 -->
+    <div class="content">
+    <h2>Задание 6</h2>
+    <div class="task">
+     <span>Создать константу для администратора сайта и вывести ее значение.</span>
+    </div>
+        <h3>Код</h3>
+            <div class="result">
+            <code>
+                <pre>
+&lt;?php
+     const ADMIN = "kaplin";
+     echo ADMIN;
+?>
+
+</pre>
+            </code>
+</div>            
+          <h3>Результат</h3>
+       <?php include ('scripts/2-task6.php');?>
+ </div>  
+ 
+        <!--  задание 7 -->
+    <div class="content">
+    <h2>Задание 7</h2>
+    <div class="task">
+     <span>Вычислить значение логического выражения при следующих значениях логических величин А, В и С: А= Истина, В= Ложь, С= Истина. 
+а) А или В; б) А и В; а) В или С. 
+</span>
+    </div>
+        <h3>Код</h3>
+            <div class="result">
+            <code>
+                <pre>
+&lt;?php
+	$A = true;
+	$B = false;
+	$C = true;
+	echo $A or $B; echo "&lt;br>";
+	echo $A and $B; echo "&lt;br>";
+	echo $B or $C; echo "&lt;br>";
+ ?>
+
+</pre>
+            </code>
+</div>            
+          <h3>Результат</h3>
+       <?php include ('scripts/2-task7.php');?>
+ </div> 
+ 
+         <!--  задание 8 -->
+    <div class="content">
+    <h2>Задание 8</h2>
+    <div class="task">
+     <span>Вычислить значение логического выражения при следующих значениях логических величин А, В и С: А= Истина, В= Ложь, С= Ложь. 
+а) А и (не В или С); б) не (А и В) или С; а) В или (С и не А). 
+
+</span>
+    </div>
+        <h3>Код</h3>
+            <div class="result">
+            <code>
+                <pre>
+&lt;?php
+	$A = true;
+	$B = false;
+	$C = true;
+	
+	echo $A and (!$B or $C); echo "&lt;br>";
+	echo !($A and $B) or $C; echo "&lt;br>";
+	echo $B or ($C and !$A); echo "&lt;br>";
+ ?>
+
+</pre>
+            </code>
+</div>            
+          <h3>Результат</h3>
+       <?php include ('scripts/2-task8.php');?>
+ </div> 
+ 
+ <!--  задание 9 -->
+    <div class="content">
+    <h2>Задание 9</h2>
+    <div class="task">
+     <span>Написать скрипт, сравнивая переменные различных типов.</span>
+    </div>
+        <h3>Код</h3>
+            <div class="result">
+            <code>
+                <pre>
+&lt;?php
+    echo var_dump(1 == TRUE); echo "&lt;br>";  // TRUE - то же, что и (bool)1 == TRUE
+    echo var_dump(0 == FALSE); echo "&lt;br>"; // TRUE - то же, что и (bool)0 == FALSE
+    echo var_dump(100 < TRUE);  echo "&lt;br>";// FALSE - то же, что и (bool)100 < TRUE
+    echo var_dump(-10 < FALSE); echo "&lt;br>";// FALSE - то же, что и (bool)-10 < FALSE
+    echo var_dump(null < string); echo "&lt;br>";
+    echo var_dump(array(1) > "11");echo "&lt;br>";
+    echo var_dump("11" > 111);echo "&lt;br>";
+    echo var_dump(object < "11");echo "&lt;br>";
+ ?>
+
+</pre>
+            </code>
+</div>            
+          <h3>Результат</h3>
+       <?php include ('scripts/2-task9.php');?>
+ </div> 
+ 
+  <!--  задание 10 -->
+    <div class="content">
+    <h2>Задание 10</h2>
+    <div class="task">
+     <span>Протестировать и вывести результаты переменных</span>
+    </div>
+        <h3>Код</h3>
+            <div class="result">
+            <code>
+                <pre>
+&lt;?php
+echo "<h3>Постфиксный инкремент</h3>";
+$a = 5;
+echo "Должно быть 5: " . $a++ . "<br />\n";
+echo "Должно быть 6: " . $a . "<br />\n";
+
+echo "<h3>Префиксный инкремент</h3>";
+$a = 5;
+echo "Должно быть 6: " . ++$a . "<br />\n";
+echo "Должно быть 6: " . $a . "<br />\n";
+
+echo "<h3>Постфиксный декремент</h3>";
+$a = 5;
+echo "Должно быть 5: " . $a-- . "<br />\n";
+echo "Должно быть 4: " . $a . "<br />\n";
+
+echo "<h3>Префиксный декремент</h3>";
+$a = 5;
+echo "Должно быть 4: " . --$a . "<br />\n";
+echo "Должно быть 4: " . $a . "<br />\n";
+?>
+
+
+</pre>
+            </code>
+</div>            
+          <h3>Результат</h3>
+       <?php include ('scripts/2-task10.php');?>
+ </div> 
+ 
+</div>
+ 
+</div>
+   
+<!-- Пактика 4 -->
+   
+   <div class="work">
+  
+<!-- Практическая 1 --> 
+    <div class="group" >
+    <div class="brush">
+    
+    <h1 id="four">Практическая работа 4</h1>
+    <h2>Условные операторы. Операторы цикла.</h2>
+    </div>
+ <!--  задание 1 -->
+    <div class="content">
+    <h2>Задание 1</h2>
+    <div class="task">
+     <span>Создайте таблицу умножения на 5.</span>
+    </div>
+        <h3>Код</h3>
+            <div class="result">
+            <code>
+                <pre>
+&lt;?php
+function calculation($i) 
+{
+    $res= $i*5;
+	echo "$i x 5 = $res";  echo "</br>";
+}
+
+for ($i=1; $i<=10; $i++) {
+	calculation($i, 5); 
+}
+
+?>
+                </pre>
+            </code>
+</div>            
+          <h3>Результат</h3>
+       <?php include ('scripts/4-task1.php');?>
+ </div>  
+  
+         <!--  задание 2 -->
+    <div class="content">
+    <h2>Задание 2</h2>
+    <div class="task">
+     <span>Найти сумму от 1 до 10 включительно.</span>
+    </div>
+        <h3>Код</h3>
+            <div class="result">
+            <code>
+                <pre>
+&lt;?php
+   $min=0;
+   $max=10;
+   $s=range($min,$max);
+ 
+    for ($i=$min; $i<=$max; $i++){
+        echo "&lt;br>";
+        echo $min+=$s[$i];
+    }
+?>
+                </pre>
+            </code>
+</div>            
+          <h3>Результат</h3>
+       <?php include ('scripts/4-task2.php');?>
+ </div>  
+        
+                 <!--  задание 3 -->
+    <div class="content">
+    <h2>Задание 3</h2>
+    <div class="task">
+     <span>Найти произведение чисел i, j, если 1&lt;=i&lt;=10 и 3 &lt;=j&lt;=9</span>
+    </div>
+        <h3>Код</h3>
+            <div class="result">
+            <code>
+                <pre>
+&lt;?php
+for ($i=1; 1<=$i AND $i<=10; $i++) {
+    for ($j=3; 3<=$j AND $j<=9; $j++) {
+        $res = $i*$j;
+        echo "$i x $j = $res"; echo "&lt;/br>";
+    }
+}
+?>
+                </pre>
+            </code>
+</div>            
+          <h3>Результат</h3>
+       <?php include ('scripts/4-task3.php');?>
+ </div>  
+        
+        
+                 <!--  задание 4 -->
+    <div class="content">
+    <h2>Задание 4</h2>
+    <div class="task">
+     <span>Вывести числа, вычисляемые случайным образом, если они больше 10</span>
+    </div>
+        <h3>Код</h3>
+            <div class="result">
+            <code>
+                <pre>
+&lt;?php
+for ($j=1;$j>10; $j++)
+{
+	  $i = rand();
+    if  ($i >10){ 
+		  echo $i;
+    }
+	
+}
+?>
+                </pre>
+            </code>
+</div>            
+          <h3>Результат</h3>
+       <?php include ('scripts/4-task4.php');?>
+ </div>  
+        
+     <!--  задание 5 -->
+    <div class="content">
+    <h2>Задание 5</h2>
+    <div class="task">
+     <span>...</span>
+    </div>
+        <h3>Код</h3>
+            <div class="result">
+            <code>
+                <pre>
+&lt;?php
+
+?>
+                </pre>
+            </code>
+</div>            
+          <h3>Результат</h3>
+       <?php include ('');?>
+ </div>      
+         
+         
+    
+</div>
+    
+</body>
+</html> 
